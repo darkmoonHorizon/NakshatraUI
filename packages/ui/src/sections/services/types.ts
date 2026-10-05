@@ -15,7 +15,7 @@ export interface ServicesProps {
 
 export type ServicesClientProps = ServicesProps;
 
-export function isServicesProps(obj: any): obj is ServicesProps {
+export function isServicesProps(obj: Partial<ServicesProps> | null | undefined): obj is ServicesProps {
   return (
     typeof obj === 'object' &&
     obj !== null &&

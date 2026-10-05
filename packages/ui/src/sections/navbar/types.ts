@@ -26,7 +26,7 @@ export type NavbarClientProps = NavbarProps;
 
 // --- Runtime Type Guards (No external dependencies) ---
 
-export function isNavbarLink(obj: any): obj is NavbarLink {
+export function isNavbarLink(obj: Partial<NavbarLink> | null | undefined): obj is NavbarLink {
   return (
     typeof obj === 'object' &&
     obj !== null &&
@@ -36,7 +36,7 @@ export function isNavbarLink(obj: any): obj is NavbarLink {
   );
 }
 
-export function isNavbarColumn(obj: any): obj is NavbarColumn {
+export function isNavbarColumn(obj: Partial<NavbarColumn> | null | undefined): obj is NavbarColumn {
   return (
     typeof obj === 'object' &&
     obj !== null &&
@@ -46,7 +46,7 @@ export function isNavbarColumn(obj: any): obj is NavbarColumn {
   );
 }
 
-export function isNavbarFeaturedProject(obj: any): obj is NavbarFeaturedProject {
+export function isNavbarFeaturedProject(obj: Partial<NavbarFeaturedProject> | null | undefined): obj is NavbarFeaturedProject {
   return (
     typeof obj === 'object' &&
     obj !== null &&
@@ -58,7 +58,7 @@ export function isNavbarFeaturedProject(obj: any): obj is NavbarFeaturedProject 
   );
 }
 
-export function isNavbarProps(obj: any): obj is NavbarProps {
+export function isNavbarProps(obj: Partial<NavbarProps> | null | undefined): obj is NavbarProps {
   return (
     typeof obj === 'object' &&
     obj !== null &&

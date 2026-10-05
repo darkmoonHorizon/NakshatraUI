@@ -20,7 +20,6 @@ export function NavbarFeatured({ featuredProjects, featuredColIndex }: NavbarFea
             className="nk-navbar-card-img-wrapper"
             style={{ position: 'relative', width: '100%', paddingBottom: '150%' }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={project.imageUrl} alt={project.title} className="nk-navbar-card-img" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div className="nk-navbar-card-info">

@@ -17,6 +17,7 @@
   "scripts": {
     "build": "tsdown && tailwindcss -i styles/styles.css -o dist/styles.css",
     "dev": "tsdown --watch",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
