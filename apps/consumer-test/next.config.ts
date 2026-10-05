@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@nakshatra/ui"],
+  transpilePackages: ["@ekatra/next-ui"],
   images: {
     remotePatterns: [
       {

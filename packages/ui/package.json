@@ -1,5 +1,5 @@
 {
-  "name": "@nakshatra/ui",
+  "name": "@ekatra/next-ui",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.js",

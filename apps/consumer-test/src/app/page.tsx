@@ -1,5 +1,5 @@
-import { Navbar, Services } from "@nakshatra/ui";
-import "@nakshatra/ui/styles.css";
+import { Navbar, Services } from "@ekatra/next-ui";
+import "@ekatra/next-ui/styles.css";
 import { columns, featuredProjects, servicesData } from "./data";
 
 export default function Home() {

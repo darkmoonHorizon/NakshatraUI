@@ -2,14 +2,14 @@
 
 Status: ACTIVE
 Last Updated: 2026-10-03
-Owner: Nakshatra Core
+Owner: @ekatra/next-ui Core
 
 ## System Overview
 
 ```text
 Consumer Application
         ↓
-@nakshatra/ui
+@ekatra/next-ui
         ↓
 Sections
         ↓
