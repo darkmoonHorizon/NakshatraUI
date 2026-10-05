@@ -17,8 +17,7 @@
   "scripts": {
     "build": "tsdown && tailwindcss -i styles/styles.css -o dist/styles.css",
     "dev": "tsdown --watch",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "next": "^15.0.0",
