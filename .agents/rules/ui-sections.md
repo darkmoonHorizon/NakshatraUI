@@ -38,3 +38,4 @@ sections/[section-name]/
 - Make the section data-driven via props.
 - Architecture must support visual variants easily. Define `variant` or `theme` props in `types.ts` as needed.
 - Pass variant props to the root HTML elements as `data-*` attributes (e.g., `data-theme={theme}`) to allow for clean CSS targeting without massive conditional class strings.
+

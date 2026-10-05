@@ -24,3 +24,4 @@ export function isServicesProps(obj: Partial<ServicesProps> | null | undefined):
     typeof obj.secondaryText === 'string'
   );
 }
+

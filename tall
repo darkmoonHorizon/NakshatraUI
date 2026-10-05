@@ -1,0 +1,16 @@
+[35mapps/consumer-test/next.config.ts[m[36m:[m  transpilePackages: ["[1;31m@vserve_digital/ui[m"],
+[35mapps/consumer-test/package.json[m[36m:[m    "[1;31m@vserve_digital/ui[m": "workspace:*",
+[35mapps/consumer-test/src/app/layout.tsx[m[36m:[mimport "[1;31m@vserve_digital/ui[m/styles.css";
+[35mapps/consumer-test/src/app/page.tsx[m[36m:[mimport { Navbar, Services } from "[1;31m@vserve_digital/ui[m";
+[35mapps/consumer-test/src/app/page.tsx[m[36m:[mimport "[1;31m@vserve_digital/ui[m/styles.css";
+[35mdocs/architecture/ARCHITECTURE.md[m[36m:[mOwner: [1;31m@vserve_digital/ui[m Core
+[35mdocs/architecture/ARCHITECTURE.md[m[36m:[m[1;31m@vserve_digital/ui[m
+[35mdocs/architecture/PACKAGE-ARCHITECTURE.md[m[36m:[mOwner: [1;31m@vserve_digital/ui[m Core
+[35mdocs/architecture/PACKAGE-ARCHITECTURE.md[m[36m:[m- **Package Identity:** `[1;31m@vserve_digital/ui[m`
+[35mdocs/project/PROJECT-OVERVIEW.md[m[36m:[mOwner: [1;31m@vserve_digital/ui[m Core
+[35mdocs/project/PROJECT-OVERVIEW.md[m[36m:[m- **Package identity:** `[1;31m@vserve_digital/ui[m`
+[35mdocs/requirements/TRD.md[m[36m:[mOwner: [1;31m@vserve_digital/ui[m Core
+[35mdocs/requirements/TRD.md[m[36m:[m- `[1;31m@vserve_digital/ui[m`
+[35mpackage.json[m[36m:[m    "consumer:verify": "pnpm --filter [1;31m@vserve_digital/ui[m run build && pnpm run test:pack && pnpm run test:consumer",
+[35mpackages/ui/package.json[m[36m:[m  "name": "[1;31m@vserve_digital/ui[m",
+[35mpnpm-lock.yaml[m[36m:[m      "[1;31m@vserve_digital/ui[m":

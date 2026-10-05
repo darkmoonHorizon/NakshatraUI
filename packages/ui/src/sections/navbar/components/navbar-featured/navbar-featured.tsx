@@ -39,3 +39,4 @@ export function NavbarFeatured({ featuredProjects, featuredColIndex }: NavbarFea
     </aside>
   );
 }
+

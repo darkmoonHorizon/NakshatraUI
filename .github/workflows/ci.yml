@@ -60,3 +60,4 @@ jobs:
             echo "Error: workspace:* dependency leaked into package.json"
             exit 1
           fi
+

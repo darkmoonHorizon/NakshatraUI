@@ -45,3 +45,4 @@ export function ServicesItem({ item }: ServicesItemProps): ReactNode {
     </div>
   );
 }
+

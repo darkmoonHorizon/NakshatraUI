@@ -47,3 +47,4 @@ export function NavbarNavList({ columns }: NavbarNavListProps): ReactNode {
     </nav>
   );
 }
+

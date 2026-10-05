@@ -25,3 +25,4 @@ export function NavbarTrigger({ isOpen, setIsOpen, triggerRef }: NavbarTriggerPr
     </button>
   );
 }
+

@@ -33,3 +33,4 @@ export function NavbarHeader({ setIsOpen, triggerRef }: NavbarHeaderProps): Reac
     </div>
   );
 }
+

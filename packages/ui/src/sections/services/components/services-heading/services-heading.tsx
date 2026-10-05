@@ -13,3 +13,4 @@ export function ServicesHeading({ primaryText, secondaryText }: ServicesHeadingP
     </h2>
   );
 }
+

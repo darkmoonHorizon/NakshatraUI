@@ -17,3 +17,4 @@ export function Navbar({ columns, featuredProjects }: NavbarProps): ReactNode {
     </header>
   );
 }
+

@@ -7,3 +7,4 @@ interface ServicesLabelProps {
 export function ServicesLabel({ label }: ServicesLabelProps): ReactNode {
   return <div className="nk-services-label">{label}</div>;
 }
+

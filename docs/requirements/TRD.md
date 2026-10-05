@@ -2,7 +2,7 @@
 
 Status: ACTIVE
 Last Updated: 2026-10-03
-Owner: @ekatra/next-ui Core
+Owner: @vserve_digital/ui Core
 
 ## Framework
 
@@ -33,7 +33,7 @@ Owner: @ekatra/next-ui Core
 
 ## Package
 
-- `@ekatra/next-ui`
+- `@vserve_digital/ui`
 
 ## Build
 
@@ -45,3 +45,4 @@ Owner: @ekatra/next-ui Core
 ### FUTURE DISTRIBUTION BUILD (OPEN)
 
 - The future npm distribution strategy must not be treated as current implementation scope.\n
+

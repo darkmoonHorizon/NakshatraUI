@@ -10,3 +10,4 @@ export interface SectionMetadata {
   description: string;
   variants: Record<string, SectionVariantMetadata>;
 }
+

@@ -1,5 +1,5 @@
-import { Navbar, Services } from "@ekatra/next-ui";
-import "@ekatra/next-ui/styles.css";
+import { Navbar, Services } from "@vserve_digital/ui";
+import "@vserve_digital/ui/styles.css";
 import { columns, featuredProjects, servicesData } from "./data";
 
 export default function Home() {
@@ -10,3 +10,4 @@ export default function Home() {
     </main>
   );
 }
+

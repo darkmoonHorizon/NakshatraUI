@@ -21,3 +21,4 @@ export default defineConfig({
   treeshake: true,
   external: ["react", "react-dom", "next"]
 });
+

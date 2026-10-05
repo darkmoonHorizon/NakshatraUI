@@ -40,3 +40,4 @@ export function NavbarClient({ columns, featuredProjects }: NavbarClientProps): 
     </>
   );
 }
+

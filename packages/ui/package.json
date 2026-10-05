@@ -1,5 +1,5 @@
 {
-  "name": "@ekatra/next-ui",
+  "name": "@vserve_digital/ui",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -36,3 +36,4 @@
     "vitest": "^2.0.0"
   }
 }
+

@@ -44,3 +44,4 @@ export function NavbarOverlay({ isOpen, setIsOpen, triggerRef, children }: Navba
     </div>
   );
 }
+

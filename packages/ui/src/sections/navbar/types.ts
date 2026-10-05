@@ -68,3 +68,4 @@ export function isNavbarProps(obj: Partial<NavbarProps> | null | undefined): obj
     obj.featuredProjects.every(isNavbarFeaturedProject)
   );
 }
+

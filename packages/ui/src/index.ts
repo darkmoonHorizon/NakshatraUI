@@ -7,3 +7,4 @@ export type { NavbarProps, NavbarLink, NavbarColumn, NavbarFeaturedProject } fro
 
 export { Services } from "./sections/services";
 export type { ServicesProps } from "./sections/services/types";
+

@@ -16,3 +16,4 @@ export interface DesignDocument {
   theme: DesignTheme;
   sections: DesignSection[];
 }
+

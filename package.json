@@ -7,7 +7,7 @@
     "lint": "pnpm -r run lint",
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test",
-    "consumer:verify": "pnpm --filter @ekatra/next-ui run build && pnpm run test:pack && pnpm run test:consumer",
+    "consumer:verify": "pnpm --filter @vserve_digital/ui run build && pnpm run test:pack && pnpm run test:consumer",
     "test:pack": "cd packages/ui && npm pack",
     "test:consumer": "cd apps/consumer-test && pnpm run build"
   },
@@ -19,3 +19,4 @@
     "typescript-eslint": "^8.71.0"
   }
 }
+

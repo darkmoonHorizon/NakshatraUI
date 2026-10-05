@@ -2,14 +2,14 @@
 
 Status: ACTIVE
 Last Updated: 2026-10-03
-Owner: @ekatra/next-ui Core
+Owner: @vserve_digital/ui Core
 
 ## System Overview
 
 ```text
 Consumer Application
         ↓
-@ekatra/next-ui
+@vserve_digital/ui
         ↓
 Sections
         ↓
@@ -28,3 +28,4 @@ Shared primitives only where proven
 - **Server/Client Boundary:** Components are Server Components by default. Client Components are used exclusively for interactivity at the leaves of the tree (Client Islands).
 - **Styling Boundary:** Tailwind for utility, CSS Modules for complex/scoped section-specific animations and styles.
 - **Data Boundary:** Data is passed as serializable props. No internal data fetching.\n
+

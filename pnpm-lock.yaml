@@ -25,7 +25,7 @@ importers:
 
   apps/consumer-test:
     dependencies:
-      "@ekatra/next-ui":
+      "@vserve_digital/ui":
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -8147,3 +8147,4 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.25.76: {}
+

@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@ekatra/next-ui"],
+  transpilePackages: ["@vserve_digital/ui"],
   images: {
     remotePatterns: [
       {
@@ -13,3 +13,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+

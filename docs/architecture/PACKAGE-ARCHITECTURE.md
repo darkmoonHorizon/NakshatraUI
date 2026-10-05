@@ -2,11 +2,11 @@
 
 Status: ACTIVE
 Last Updated: 2026-10-03
-Owner: @ekatra/next-ui Core
+Owner: @vserve_digital/ui Core
 
 ## Current Monorepo Development (ACTIVE)
 
-- **Package Identity:** `@ekatra/next-ui`
+- **Package Identity:** `@vserve_digital/ui`
 - **Workspace:** pnpm workspace linking `packages/ui` to `apps/*`.
 - **Source Structure:** `packages/ui/src`
 - **Public Entry Point:** `packages/ui/src/index.ts`
@@ -17,3 +17,4 @@ Owner: @ekatra/next-ui Core
 
 The project is currently being developed as a monorepo/internal UI library. No final public NPM distribution architecture is locked.
 Do not introduce NPM-specific build constraints unless explicitly requested.\n
+
