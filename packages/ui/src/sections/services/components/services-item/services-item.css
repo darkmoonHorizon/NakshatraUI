@@ -1,0 +1,156 @@
+.nk-services-item {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden; /* Hide the background image sliding in */
+}
+
+/* Background Image Animation */
+.nk-services-item-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  transform: translateY(100%);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* Fast exit */
+  will-change: transform;
+}
+
+.nk-services-item-bg-image {
+  object-fit: cover;
+  transition: transform 0.25s ease; /* Fast reset */
+  will-change: transform;
+}
+
+.nk-services-item-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 12, 16, 0.6);
+  z-index: 1;
+}
+
+.nk-services-item:hover .nk-services-item-bg {
+  transform: translateY(0);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); /* Smooth elegant entrance */
+}
+
+.nk-services-item:hover .nk-services-item-bg-image {
+  transform: scale(1.1); /* Slow zoom effect */
+  transition: transform 10s linear 0.6s; /* Wait for slide up */
+}
+
+.nk-services-item-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1.2fr;
+  gap: 4em;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8em 4em;
+  position: relative;
+  z-index: 10;
+}
+
+.nk-services-item-left {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8em;
+  align-items: flex-start;
+}
+
+.nk-services-item-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5em;
+  height: 3.5em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-family: var(--font-primary, "Instrument Sans", sans-serif);
+  font-size: 1.2em;
+  font-weight: 400;
+  flex-shrink: 0;
+  margin-top: 0.6em;
+  transition: border-color 0.4s ease;
+}
+
+.nk-services-item:hover .nk-services-item-number {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.nk-services-item-description {
+  color: #FFFFFF;
+  font-family: var(--font-primary, "Instrument Sans", sans-serif);
+  font-size: 2.2em;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  max-width: 32ch;
+}
+
+.nk-services-item-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nk-services-item-title-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nk-services-item-title {
+  color: #FFFFFF;
+  font-family: var(--font-primary, "Instrument Sans", sans-serif);
+  font-size: 30em;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  position: relative;
+  top: -0.1em;
+  display: inline-block;
+}
+
+.nk-services-item-arrow {
+  width: 1em;
+  height: 1em;
+  font-size: 15em; /* Inherit proportional scale but explicit for crispness */
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.2s ease, transform 0.25s ease; /* Fast exit */
+  color: #FFFFFF;
+  margin-left: 0.2em;
+}
+
+.nk-services-item:hover .nk-services-item-arrow {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease 0.1s, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s; /* Smooth entrance with slight delay */
+}
+
+.nk-services-item-title-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #FFFFFF;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* Fast exit */
+}
+
+.nk-services-item:hover .nk-services-item-title-line {
+  transform: scaleX(1);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); /* Smooth entrance */
+}
+
+@media (max-width: 1024px) {
+  .nk-services-item-container {
+    grid-template-columns: 1fr;
+    gap: 4em;
+  }
+}

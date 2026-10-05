@@ -1,0 +1,18 @@
+{
+  "name": "nakshatra-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "consumer:verify": "pnpm --filter @nakshatra/ui run build && pnpm run test:pack && pnpm run test:consumer",
+    "test:pack": "cd packages/ui && npm pack",
+    "test:consumer": "cd apps/consumer-test && pnpm run build"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}

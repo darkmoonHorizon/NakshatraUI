@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 12
+          
+      - name: Install dependencies
+        run: pnpm install
+        
+      - name: Typecheck
+        run: pnpm run typecheck
+        
+      - name: Lint
+        run: pnpm run lint
+        
+      - name: Test
+        run: pnpm run test
+
+  artifact-verify:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 12
+          
+      - name: Install dependencies
+        run: pnpm install
+        
+      - name: Build UI and Consumer verify
+        run: pnpm run consumer:verify
+        
+      - name: Validate No Workspace Leaks
+        run: |
+          cd packages/ui
+          tar -xzf nakshatra-ui-0.0.0.tgz
+          if grep -q '"workspace:\*"' package/package.json; then
+            echo "Error: workspace:* dependency leaked into package.json"
+            exit 1
+          fi

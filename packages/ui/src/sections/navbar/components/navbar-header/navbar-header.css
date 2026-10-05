@@ -1,0 +1,72 @@
+/* Base Header (if used externally) */
+.nk-navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  position: relative;
+  z-index: 50;
+}
+
+.nk-navbar-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: inherit;
+}
+
+/* Overlay Header */
+.nk-navbar-overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+.nk-navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.nk-navbar-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  width: 88px;
+  height: 34px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nk-navbar-close-btn:hover {
+  opacity: 0.7;
+}
+
+.nk-navbar-close-btn svg {
+  width: 17px;
+  height: 17px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.nk-navbar-close-text {
+  font-size: 13px;
+  margin: 0 0 0 8px;
+  padding: 0;
+  line-height: 1;
+}

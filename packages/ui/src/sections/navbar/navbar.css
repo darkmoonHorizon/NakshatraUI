@@ -1,0 +1,64 @@
+@import './components/navbar-trigger/navbar-trigger.css';
+@import './components/navbar-header/navbar-header.css';
+@import './components/navbar-nav-list/navbar-nav-list.css';
+@import './components/navbar-featured/navbar-featured.css';
+
+@import './components/navbar-overlay/navbar-overlay.css';
+
+/* Layout Grid */
+.nk-navbar-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  padding: 2rem 4rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+}
+
+/* Choreography: Curtain Reveal Animations */
+.nk-navbar-col-title,
+.nk-navbar-nav-item, 
+.nk-navbar-featured-card {
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+  clip-path: inset(100% 0 0 0);
+  transition: opacity 200ms var(--ease-exit), 
+              transform 300ms var(--ease-exit), 
+              clip-path 300ms var(--ease-exit);
+}
+
+.nk-navbar-overlay[data-state="open"] .nk-navbar-col-title,
+.nk-navbar-overlay[data-state="open"] .nk-navbar-nav-item,
+.nk-navbar-overlay[data-state="open"] .nk-navbar-featured-card {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  clip-path: inset(-150% -50% -150% -50%); /* Exceed bounds so hovers/shadows aren't clipped after reveal */
+  
+  /* Staged Delay: 300ms wait for glass to fade in + cascade math */
+  transition-delay: calc(300ms + (var(--stagger-col, 0) * 120ms) + (var(--stagger-row, 0) * 40ms));
+  transition-duration: 900ms;
+  transition-timing-function: var(--ease-curtain);
+  transition-property: opacity, transform, clip-path;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  .nk-navbar-overlay,
+  .nk-navbar-overlay[data-state="open"],
+  .nk-navbar-col-title,
+  .nk-navbar-overlay[data-state="open"] .nk-navbar-col-title,
+  .nk-navbar-nav-item,
+  .nk-navbar-overlay[data-state="open"] .nk-navbar-nav-item,
+  .nk-navbar-featured-card,
+  .nk-navbar-overlay[data-state="open"] .nk-navbar-featured-card,
+  .nk-navbar-card-img,
+  .nk-navbar-card-arrow {
+    transition: none !important;
+    transform: none !important;
+    clip-path: none !important;
+    transition-delay: 0ms !important;
+  }
+}
+

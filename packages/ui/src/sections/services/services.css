@@ -1,0 +1,56 @@
+@import './components/services-label/services-label.css';
+@import './components/services-heading/services-heading.css';
+@import './components/services-item/services-item.css';
+
+.nk-services {
+  background-color: #151717;
+  padding-top: 100.437px;
+  padding-bottom: 100.437px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  font-size: 0.5208333333vw; /* Fluid font scaling */
+}
+
+/* Floor for base font-size to prevent micro-text on small viewports, without using clamp() */
+@media (max-width: 960px) {
+  .nk-services {
+    font-size: 5px; /* Minimum base size */
+  }
+}
+
+.nk-services-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1.2fr;
+  gap: 4em;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4em;
+  /* Prevent layout clipping/overflow */
+  height: auto;
+  min-height: 80px;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .nk-services {
+    padding: 10rem 0;
+  }
+  
+  .nk-services-layout {
+    grid-template-columns: 1fr;
+    gap: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .nk-services {
+    padding: 6rem 0;
+  }
+  
+  .nk-services-layout {
+    padding: 0 2em;
+    gap: 2em;
+  }
+}
+

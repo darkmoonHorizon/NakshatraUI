@@ -1,0 +1,32 @@
+.nk-services-heading {
+  font-family: var(--font-primary, "Instrument Sans", "Instrument Sans Fallback", sans-serif);
+  font-size: 48.21px; 
+  font-weight: 500;
+  font-style: normal;
+  line-height: 105%;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nk-services-heading-primary {
+  color: #FFFFFF;
+}
+
+.nk-services-heading-secondary {
+  color: #B3B3B3;
+}
+
+@media (max-width: 1024px) {
+  .nk-services-heading {
+    font-size: 40px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .nk-services-heading {
+    font-size: 32px;
+  }
+}
